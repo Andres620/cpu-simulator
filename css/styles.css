@@ -1,0 +1,44 @@
+.box {
+	padding: 10px;
+	background-color: #FFF;
+	border-radius: 10px;
+	margin: 20px;
+}
+.ram {
+	position: absolute;
+	bottom: 0px;
+	top: 0px;
+	right: 10px;
+	width: 30%;
+	overflow-y: scroll;
+	border: 2px solid #000;
+	border-radius: 10px;
+	margin: 10px;
+	padding: 10px;
+	background-color: rgb(115, 196, 158);
+}
+.ram table {
+	background-color: #FFF;
+}
+
+#cpu {
+	position: relative;
+	height: 95vh;
+}
+
+.cpu {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	padding: 10px;
+	margin: 10px;
+	width: 50%;
+	border: 2px solid #000;
+	border-radius: 10px;
+	background-color:#FCC;
+	bottom: 0px;
+}
+
+.btn {
+   margin: 10px; 
+}
