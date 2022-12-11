@@ -30,12 +30,52 @@
     ></script>
     <script type="text/javascript" src="lib/cpu.js"></script>
     <script type="text/javascript" src="lib/raphael.min.js"></script>
-    <script
-      type="text/javascript"
-      src="//platform-api.sharethis.com/js/sharethis.js#property=5989cbc50bf9cd001279351d&product=sticky-share-buttons"
-    ></script>
+
   </head>
   <body>
+<div id="options" class="box">
+      <h4><i class="fa fa-cog"></i>Opciones:</h4>
+
+      <div class="btn-group" role="group" aria-label="Reset">
+        <button
+          type="button"
+          class="btn btn_values btn-secondary"
+          id="btn_reset_ram"
+        >
+          <i class="fa fa-undo"></i> Limpiar Memoria
+        </button>
+        <button
+          type="button"
+          class="btn btn_values btn-secondary"
+          id="btn_reset_cpu"
+        >
+          <i class="fa fa-undo"></i> Limpiar CPU
+        </button>
+      </div>
+
+
+      <span class="form-group">
+        <label for="run_speed"
+          >Run speed:
+          <select class="form-control" id="run_speed">
+            <option value="10">Turbo (100 Hz)</option>
+            <option value="10">Fast (2 Hz)</option>
+            <option value="10" selected>Normal (1 Hz)</option>
+            <option value="10">Slow (0.5 Hz)</option>
+            <option value="10">Slug (0.2 Hz)</option>
+          </select>
+        </label>
+      </span>
+
+      <div id="run_buttons" class="btn-group" role="group" aria-label="Run">
+        <button type="button" class="btn btn-secondary" id="btn_step">
+          <i class="fa fa-step-forward"></i> Paso a paso
+        </button>
+        <button type="button" class="btn btn-secondary" id="btn_run">
+          <i class="fa fa-play"></i> Ejecutar
+        </button>
+      </div>
+    </div>
 
     <div id="cpu" class="box"></div>
   </body>

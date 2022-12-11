@@ -99,7 +99,7 @@ body {
 	width: 50%;
 	border: 2px solid #000;
 	border-radius: 10px;
-	background-color:#FCC;
+	background-color:rgb(98, 112, 240);
 	bottom: 0px;
 }
 
@@ -118,10 +118,10 @@ body {
 	background-color: #FFF;
 }
 
-.value, .value_address {
+.value, .value_address, .value_one_bit {
 	transition: all 0.5s;
 }
-.value:hover, .value_address:hover {
+.value:hover, .value_address:hover, .value_one_bit:hover {
 	font-size: 1.5em;
 }
 
@@ -165,9 +165,8 @@ body {
 
 .register:hover, .general_register:hover {
 	width: auto;
+	min-width: 32%;
 }
-
-
 
 #reg_pc {
 	left: 20%;
@@ -226,7 +225,7 @@ body {
 
 #reg_of {
 	left: 85%;
-	top: 32%;
+	top: 30%;
 }
 
 #reg_cf {
@@ -236,7 +235,7 @@ body {
 
 #reg_zf {
 	left: 85%;
-	top: 42%;
+	top: 44%;
 }
 
 #alu,#cu {
@@ -270,4 +269,15 @@ body {
 
 .btn {
    margin: 10px; 
+}
+
+.form-group label {
+    text-align: left;
+    font-weight: normal;
+}
+
+.form-group select {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
 }
