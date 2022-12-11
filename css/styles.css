@@ -1,3 +1,8 @@
+body {
+	/* font-family: 'VT323', monospace; */
+	font-size: 10.5px;
+}
+
 .box {
 	padding: 10px;
 	background-color: #FFF;
@@ -39,7 +44,7 @@
 	left: 64%;
 	top: 0px;
 	padding: 2px;
-	margin: 10px;
+	margin:8px;
 	width: 2%;
 	border: 2px solid #000;
 	background-color:rgb(230, 130, 130);
@@ -117,17 +122,52 @@
 	transition: all 0.5s;
 }
 .value:hover, .value_address:hover {
-	font-size: 2em;
+	font-size: 1.5em;
 }
 
-.register {
+.register_address {
 	position: absolute;
-	width: 30%;
+	width: 15%;
 	background-color: #FFF;
 	border: 1px solid #000;
 	text-align: center;
 	z-index: 200;
 }
+
+.register {
+	position: absolute;
+	width: 32%;
+	background-color: #FFF;
+	border: 1px solid #000;
+	text-align: center;
+	z-index: 200;
+}
+
+.general_register {
+	display: flex;
+	position: absolute;
+	width: 32%;
+	background-color: rgb(217, 218, 157);
+	border: 1px solid #000;
+	text-align: left;
+	justify-content: space-between;
+	z-index: 200;
+}
+
+.flag_register {
+	position: absolute;
+	width: 8%;
+	background-color: #FFF;
+	border: 1px solid #000;
+	text-align: center;
+	z-index: 200;
+}
+
+.register:hover, .general_register:hover {
+	width: auto;
+}
+
+
 
 #reg_pc {
 	left: 20%;
@@ -140,18 +180,63 @@
 }
 
 #reg_eax {
-	right: 10px;
-	top: 15%;
+	left: 39%;
+	top: 52%;
 }
 
 #reg_mbr {
 	right: 10px;
-	top: 55%;
+	top: 65%;
 }
 
 #reg_ir {
 	right: 10px;
 	top: 75%;
+}
+
+#reg_r1 {
+	left: 38%;
+	top: 15%;
+}
+
+#reg_r2 {
+	left: 38%;
+	top: 18%;
+}
+
+#reg_r3 {
+	left: 38%;
+	top: 21%;
+}
+
+#reg_r4 {
+	left: 38%;
+	top: 24%;
+}
+
+#reg_r5 {
+	left: 38%;
+	top: 27%;
+}
+
+#reg_r6 {
+	left: 38%;
+	top: 30%;
+}
+
+#reg_of {
+	left: 85%;
+	top: 32%;
+}
+
+#reg_cf {
+	left: 85%;
+	top: 37%;
+}
+
+#reg_zf {
+	left: 85%;
+	top: 42%;
 }
 
 #alu,#cu {
@@ -164,8 +249,8 @@
 }
 
 #alu {
-	left: 50%;
-	top: 35%;
+	left: 38%;
+	top: 37%;
 	background-color: #39F;
 }
 
