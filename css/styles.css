@@ -26,6 +26,65 @@
 	height: 95vh;
 }
 
+#bus {
+    display: flex;
+    flex-direction: column;
+}
+
+.bus_control {
+    display: flex;
+	position: absolute;
+    justify-content: flex-start;
+    align-items: center;
+	left: 64%;
+	top: 0px;
+	padding: 2px;
+	margin: 10px;
+	width: 2%;
+	border: 2px solid #000;
+	background-color:rgb(230, 130, 130);
+	bottom: 0px;
+}
+
+.bus_control h4, .bus_data h4, .bus_address h4 {
+    width: 20px;
+    font-size: 20px;
+    letter-spacing: 10px;
+    word-wrap: break-word;
+
+}
+
+
+.bus_data {
+	display: flex;
+	position: absolute;
+    justify-content: flex-start;
+    align-items: center;
+	left: 59%;
+	top: 0px;
+	padding: 2px;
+	margin: 10px;
+	width: 2%;
+	border: 2px solid #000;
+	background-color:rgb(230, 130, 130);
+	bottom: 0px;
+}
+
+.bus_address {
+	display: flex;
+	position: absolute;
+    justify-content: flex-start;
+    align-items: center;
+	left: 54%;
+	top: 0px;
+	padding: 2px;
+	margin: 10px;
+	width: 2%;
+	border: 2px solid #000;
+	background-color:rgb(230, 130, 130);
+	bottom: 0px;
+}
+
 .cpu {
 	position: absolute;
 	left: 0px;
@@ -54,10 +113,10 @@
 	background-color: #FFF;
 }
 
-.value {
+.value, .value_address {
 	transition: all 0.5s;
 }
-.value:hover {
+.value:hover, .value_address:hover {
 	font-size: 2em;
 }
 
@@ -80,17 +139,17 @@
 	top: 10px;
 }
 
-#reg_acc {
+#reg_eax {
 	right: 10px;
 	top: 15%;
 }
 
-#reg_mdr {
+#reg_mbr {
 	right: 10px;
 	top: 55%;
 }
 
-#reg_cir {
+#reg_ir {
 	right: 10px;
 	top: 75%;
 }
@@ -116,6 +175,13 @@
 	background-color: #390;
 }
 
+#drawing {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	z-index: 100;
+}
 
 .btn {
    margin: 10px; 
