@@ -118,10 +118,10 @@ body {
 	background-color: #FFF;
 }
 
-.value, .value_address, .value_one_bit {
+.value, .value_address, .value_flag {
 	transition: all 0.5s;
 }
-.value:hover, .value_address:hover, .value_one_bit:hover {
+.value:hover, .value_address:hover, .value_flag:hover {
 	font-size: 1.5em;
 }
 
@@ -166,6 +166,11 @@ body {
 .register:hover, .general_register:hover {
 	width: auto;
 	min-width: 32%;
+}
+
+.flag_register:hover {
+	width: auto;
+	min-width: 8%;
 }
 
 #reg_pc {
@@ -280,4 +285,92 @@ body {
     display: inline-block;
     width: auto;
     vertical-align: middle;
+}
+
+.value_binary:hover:before {
+	font-family: FontAwesome;
+}
+
+.value_denary:hover:before {
+	font-family: FontAwesome;
+}
+
+.value_hex:hover:before {
+	font-family: FontAwesome;
+}
+
+.edit-text {
+	text-align: center;
+}
+#run_buttons {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	z-index: 300;
+}
+
+/* #hint {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 80%;
+	background-color: rgba(255,255,255,0.9);
+	border: 2px solid #000;
+	border-radius: 0px 10px 0px 0px;
+	z-index: 250;
+	padding: 10px;
+	text-align: center;
+	font-size: 1.5em;
+	transition: all 1s;
+	pointer-events: none;
+} */
+
+
+/* .hint-hidden {
+	opacity: 0;
+}
+
+#btn_toggle_hint {
+	position: fixed;
+	left: 10px;
+	bottom: 10px;
+	z-index: 350;
+} */
+
+.fetch_decode_execute {
+	border-radius: 10px;
+	padding: 10px;
+	margin: 10px;
+}
+
+/* .hint_name {
+	font-weight: bold;
+	color: #F00;
+} */
+
+.fetch {
+	background-color: #F00;
+}
+
+.decode {
+	background-color: #0F0;
+}
+
+.execute {
+	background-color: #00F;
+	color: #FFF;
+}
+
+@keyframes highlight {
+	from {box-shadow:  0px 0px 15px rgba(255,0,0,0.5);}
+	to {box-shadow:  0px 0px 30px rgba(255,0,0,1);}
+}
+
+.active {
+	animation: highlight 2s linear infinite alternate;
+}
+
+.current_instruction::after{
+	content: " \f04b ";
+	font-family: FontAwesome;
 }
