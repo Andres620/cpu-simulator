@@ -106,12 +106,14 @@ body {
 .decode_unit {
 	position: absolute;
 	top: 20%;
+	left: 1%;
 	background-color: #FFC;
 	border: 2px solid #000;
 	padding: 10px;
 	overflow-y: scroll;
 	bottom: 0px;
 	max-width: 50%;
+	width: 33%;
 }
 
 .decode_unit table {
